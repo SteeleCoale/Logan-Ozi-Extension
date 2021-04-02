@@ -1,0 +1,20 @@
+{
+  "name" : "Ozi and Logan's Extension",
+  "version" : "1.0",
+  "manifest_version" : 2,
+  "content_scripts" : [
+    {
+      "matches" : ["<all_urls>"],
+      "js" : ["ChromeMain.js"]
+    }
+  ],
+  "browser_action" : {
+    "default_popup": "popup.html",
+    "defualt_title" : "Alarm"
+  },
+  "background" : {
+    "scripts" : ["background.js"]
+    
+  },
+  "permissions" : ["activeTab"]
+}
